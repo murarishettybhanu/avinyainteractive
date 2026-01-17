@@ -1,16 +1,31 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Avinya Interactive Clone
 
-Currently, two official plugins are available:
+A high-fidelity rebuild of the Avinya Interactive portfolio website using React, Vite, and plain CSS. This project demonstrates responsive design, modern CSS techniques (glassmorphism, gradients), and timeline animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+-   **Framework:** React + Vite
+-   **Styling:** Plain CSS (CSS Variables, BEM)
+-   **Icons:** Lucide React
+-   **Deployment:** GitHub Pages
 
-## React Compiler
+## Local Development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Install dependencies
+npm install
 
-## Expanding the ESLint configuration
+# Start development server
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deployment to GitHub Pages
+
+This project is configured to deploy automatically via GitHub Actions.
+
+1.  Push changes to the `main` branch.
+2.  Go to **Settings > Pages** in your GitHub repository.
+3.  Under **Build and deployment**, select **GitHub Actions** as the source.
+4.  The action will run and deploy the site to `https://<your-username>.github.io/avinyainteractive/`.
+
+**Note:** The `vite.config.js` `base` path is set to `/avinyainteractive/`. If you rename the repository, update this value.

@@ -37,6 +37,12 @@
     font-weight: 400;
 }
 
+.navbar-logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
 /* Desktop Menu */
 .desktop-menu {
     display: flex;

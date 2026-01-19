@@ -8,7 +8,7 @@ const Footer = () => {
         <footer id="contact" className="footer">
             <div className="container footer-content">
                 <div className="footer-section">
-                    <h3>AVINYA INTERACTIVE</h3>
+                    <img src="/avinyainteractive/avinya_logo_t.png" alt="Avinya Interactive" className="footer-logo" />
                     <p>Where Art Meets Engineering</p>
                 </div>
 

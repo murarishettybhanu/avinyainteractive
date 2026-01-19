@@ -30,14 +30,14 @@ const Work = () => {
     return (
         <section id="work" className="work-section">
             <div className="container">
-                <div className="section-header">
+                <div className="section-header reveal-on-scroll">
                     <h2>Selected Work</h2>
                     <p>Highlighting recent projects in virtual production and immersive tech.</p>
                 </div>
 
                 <div className="work-grid">
                     {projects.map((project, index) => (
-                        <div key={index} className="work-card">
+                        <div key={index} className="work-card reveal-on-scroll">
                             <div className="work-thumbnail" style={{ '--project-color': project.color }}>
                                 <div className="play-overlay">
                                     <Play size={48} fill="white" />

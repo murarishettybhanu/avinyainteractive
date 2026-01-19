@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-content">
         <div className="logo">
-          AVINYA <span className="logo-accent">INTERACTIVE</span>
+          <img src="/avinyainteractive/avinya_logo_t.png" alt="Avinya Interactive" className="navbar-logo" />
         </div>
 
         {/* Desktop Menu */}
@@ -40,8 +40,8 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button 
-          className="mobile-toggle" 
+        <button
+          className="mobile-toggle"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -51,9 +51,9 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href} 
+            <a
+              key={link.name}
+              href={link.href}
               className="mobile-nav-link"
               onClick={() => setIsOpen(false)}
             >

@@ -1,5 +1,5 @@
 .about-section {
-    padding: 8rem 0;
+    padding: 8rem 0 4rem;
     background: radial-gradient(circle at top right, rgba(0, 220, 130, 0.05), transparent 40%),
         var(--bg-secondary);
 }

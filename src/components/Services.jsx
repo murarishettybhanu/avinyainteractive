@@ -40,14 +40,14 @@ const Services = () => {
     return (
         <section id="services" className="services-section">
             <div className="container">
-                <div className="section-header">
+                <div className="section-header reveal-on-scroll">
                     <h2>Services</h2>
-                    <p>End-to-end creative technology solutions.</p>
+                    <p>End-to-end solutions for the virtual production pipeline.</p>
                 </div>
 
                 <div className="services-grid">
                     {servicesData.map((service, index) => (
-                        <div key={index} className="service-card glass-panel">
+                        <div key={index} className={`service-card glass-panel reveal-on-scroll delay-${(index % 3 + 1) * 100}`}>
                             <div className="service-icon">{service.icon}</div>
                             <h3>{service.title}</h3>
                             <p>{service.desc}</p>

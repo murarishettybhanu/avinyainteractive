@@ -1,8 +1,8 @@
 .footer {
     background-color: var(--bg-secondary);
-    padding: 4rem 0 2rem;
+    padding: 0 0 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    margin-top: 4rem;
+    margin-top: 0;
 }
 
 .footer-content {
@@ -11,6 +11,14 @@
     align-items: center;
     text-align: center;
     gap: 2rem;
+    padding-top: 2rem;
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    margin-bottom: 0.5rem;
+    object-fit: contain;
 }
 
 .footer-section h3 {

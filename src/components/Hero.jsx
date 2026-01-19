@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
+import InteractiveBackground from './InteractiveBackground';
 import './Hero.css';
 
 const Hero = () => {
@@ -10,11 +11,18 @@ const Hero = () => {
                 {/* Placeholder for video or cinematic background */}
                 <div className="video-overlay"></div>
                 <div className="cinematic-gradient"></div>
+                <InteractiveBackground />
             </div>
 
             <div className="container hero-content">
                 <h1 className="hero-title fade-in-up delay-1">
-                    HARSHIT <span className="outline-text">PENAMATA</span>
+                    <span className="glitch-wrapper">
+                        <span className="glitch-effect" data-text="HARSHIT">HARSHIT</span>
+                    </span>
+                    {' '}
+                    <span className="glitch-wrapper">
+                        <span className="outline-text glitch-effect" data-text="PENAMATA">PENAMATA</span>
+                    </span>
                 </h1>
                 <h2 className="hero-subtitle fade-in-up delay-2">
                     Creative Technologist

@@ -32,11 +32,11 @@ const App = () => {
       <Navbar />
       <Hero />
       <main>
+        <About />
         <Work />
         <Services />
         <Capabilities />
         <Experience />
-        <About />
       </main>
       <Footer />
     </div>

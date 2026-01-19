@@ -1,23 +1,58 @@
 .about-section {
-    padding: 8rem 0 4rem;
-    background: radial-gradient(circle at top right, rgba(0, 220, 130, 0.05), transparent 40%),
-        var(--bg-secondary);
+    padding: 8rem 0;
+    background-color: #0A0F0C;
+    position: relative;
+    overflow: hidden;
 }
 
 .about-container {
     display: flex;
     justify-content: center;
+    align-items: stretch;
+    gap: 4rem;
 }
 
 .about-content {
-    max-width: 800px;
-    text-align: center;
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100%;
+}
+
+.about-portrait {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.about-portrait:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
 }
 
 .about-title {
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     line-height: 1.2;
+    background: linear-gradient(to right, #fff, #888);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .about-text {
@@ -31,14 +66,39 @@
 
 .highlight-text {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--text-primary);
     margin-top: 2rem;
     font-style: italic;
+    border-left: 3px solid var(--accent-glow);
+    padding-left: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
+    .about-container {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-image-container {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .highlight-text {
+        border-left: none;
+        border-top: 3px solid var(--accent-glow);
+        padding-left: 0;
+        padding-top: 1.5rem;
+    }
+
     .about-title {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 }

@@ -237,7 +237,7 @@
     text-shadow: -1px 0 #ff00c1;
     clip: rect(0, 0, 0, 0);
     /* Default hidden */
-    animation: glitch-anim 2s 2 linear alternate-reverse;
+    animation: glitch-anim 2s 1 linear alternate-reverse;
 }
 
 .glitch-effect::after {
@@ -245,7 +245,7 @@
     text-shadow: -1px 0 #00fff9;
     clip: rect(0, 0, 0, 0);
     /* Default hidden */
-    animation: glitch-anim-2 2s 2 linear alternate-reverse;
+    animation: glitch-anim-2 2s 1 linear alternate-reverse;
 }
 
 /* Outline Text Specific Glitch */

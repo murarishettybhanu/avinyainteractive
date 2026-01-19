@@ -24,6 +24,13 @@ const About = () => {
                         </p>
                     </div>
                 </div>
+                <div className="about-image-container reveal-on-scroll delay-2">
+                    <img
+                        src="/avinyainteractive/harshit-portrait-t.png"
+                        alt="Harshit Penamata"
+                        className="about-portrait"
+                    />
+                </div>
             </div>
         </section>
     );
